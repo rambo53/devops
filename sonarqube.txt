@@ -1,0 +1,43 @@
+////////////////////// SONARQUBE //////////////////////
+
+Sonarqube est un logiciel permettant d'analyser son code pour détecter d'aventuels bug ou pbm de sécurité.
+
+Pour l'utiliser se rendre sur le site de sonarqube, sur gauche "try out sonarqube", sélectionner "from the docker image".
+
+Si besoin installer docker pour windows 64 bits, si message erreur rentrer cmd indiquer par docker "wsl update" (à vérifier je le fais de mémoire).
+
+Mettre en route le container sonarqube qui tournera sur :
+
+- http://localhost:9000
+
+Mot de passe et identifiant par défaut :
+
+- admin
+- admin
+
+Choisir "manually", puis "locally".
+
+Dans project, créer un nouveau projet, sélectionner le langage, si python indiquer l'os.
+Si windows télécharger le zip sonnar-scanner, le déziper, enregistrer le path du bin, ex :
+
+- C:\Users\user\Downloads\sonar-scanner-4.8.0.2856-windows\bin
+
+Dans les variables d'environnements :
+
+- paramètres
+- système
+- a propos de 
+- paramètre avancés du système
+- variables d'environnement
+- variable utilisateur
+
+Sélectionner la variable "Path", modifier, puis ajouter le path du bin copié plus haut.
+Cliquer sur ok pour enregistrer la modif.
+
+Si besoin redémarrer l'ide.
+
+Rentrer la cmd suivante, attention test est le nom du projet dans sonarqube, à modifier selon le nom renseigné dans sonarqube :
+
+- sonar-scanner.bat -D"sonar.projectKey=test" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.login=sqp_482531506bc5a63b1f0488a40beb99cda9ae4449"
+
+Une fois le message "EXECUTION SUCCESS" affiché dans la console, retourner sur l'url "http://localhost:9000/dashboard?id=test", attendre la génération du compte rendu dans "Projects".
