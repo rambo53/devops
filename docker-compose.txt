@@ -84,5 +84,8 @@ Puis la même chose dans front sans "bdd" pour indiquer que mes deux services so
 ////////////////////////////////////////////////////
 
 Pour lancer mon dockercompose :
+- docker-compose up
+
+Ou bien :
 
 - docker-compose build
