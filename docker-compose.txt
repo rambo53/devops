@@ -89,3 +89,7 @@ Pour lancer mon dockercompose :
 Ou bien :
 
 - docker-compose build
+
+Pour faire tourner mon container :
+
+- docker-compose run front		**front est le nom de mon service déclaré dans mon socker compose**
