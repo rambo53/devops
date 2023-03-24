@@ -1,0 +1,23 @@
+# un seul from par dockerfile pour déclarer une image linux à utiliser, ici je lui dit de récupérer un
+# linux alpine avec un serveur node js intégré
+
+FROM node:lts-alpine
+
+# add me permet d'indiquer les fichiers à transférer de ma machine hôte à mon conteneur, et dans quel # répertoire, ici le . indique tous les fichiers dans le répertoire courant, vers le répertoire "app" de 
+# mon containeur
+
+ADD . /app/
+
+# workdir est pour indiquer où me placer dans mon container pour faire fonctionner mon app et d'éventuelles
+# commande, ici ce sera app 
+
+WORKDIR /app
+
+# run est pour indiquer des instructions en ligne de commande à exécuter,je peux les chainer
+
+RUN npm install \
+&& ls
+
+# cmd est pour faire démarrer notre container, une seule instruction cmd par dockerfile
+
+CMD ["npm", "run", "dev"]
