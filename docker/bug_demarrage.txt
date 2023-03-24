@@ -1,0 +1,9 @@
+/////////////////////////// bug /////////////////////////
+
+Sous windows 10, j'ai rencontré un bug m'empêchant de démarrer docker, l'interface docker desktop affichait "démarrage en cours" sans jamais avancer.
+
+Pour le résoudre dans un terminal windows, taper la cmd :
+
+- wsl --shutdown
+
+Windows affichera un message proposant de redémarrer docker desktop, cliquer sur restart, puis rouvrir l'appli et tout fonctionne.
