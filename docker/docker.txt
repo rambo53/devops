@@ -1,0 +1,16 @@
+////////////////// DOCKER //////////////////
+
+Utilisation de conteneur pour stocker mes applications.
+
+Je recré un environnement virtuel pour faire tourner mon application sur un serveur.
+
+On a en premier une image, qui est un environnement, avec une version de linux adaptée à nos besoin, cette image est déclarée au sein d'un dockerfile qui liste les instructions pour mettre en place correctement mon container.
+
+Un container est une image qui est démarré et qui est en train de tourner.
+
+Je peux avoir plusieurs container qui intéragissent entre eux, pour simplifier leurs mise en place et leurs intéractions, j'utilise un fichier "docker compose" qui permet de déclarer plusieurs services interdépendants, par exemple :
+
+- front
+- api 
+- bdd
+
