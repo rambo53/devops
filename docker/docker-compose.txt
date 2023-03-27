@@ -86,3 +86,9 @@ Puis la même chose dans front sans "bdd" pour indiquer que mes deux services so
 Pour lancer mon dockercompose :
 
 - docker-compose build
+
+- docker-compose up
+
+Pour démarrer un seul service :
+
+- docker-compose run front	** front étant le nom de mon service **
