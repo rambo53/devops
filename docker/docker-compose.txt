@@ -92,3 +92,9 @@ Pour lancer mon dockercompose :
 Pour démarrer un seul service :
 
 - docker-compose run front	** front étant le nom de mon service **
+
+////////////////////////////////////////////////////
+
+Pour retirer les container générer par mon docker compose :
+
+- docker-compose down
