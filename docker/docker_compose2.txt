@@ -1,0 +1,1 @@
+Par défaut la communication entre mes services se fait par bridge.
