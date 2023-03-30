@@ -1,1 +1,5 @@
 Par défaut la communication entre mes services se fait par bridge.
+
+
+Pour modifier mon code localement et que ces modifs soient répercuté automatiquement sur mon container, plutôt que passer par l'instruction COPY ou ADD,
+je peux utiliser des volumes, puisque les modifications sont automatiquement prise en compte dans mon container. Cela me permet d'avoir une sorte de hot reload.
