@@ -1,0 +1,18 @@
+Pour lister les container actifs sur ma machine :
+
+- docker container ls
+
+CONTAINER ID   IMAGE            COMMAND                  CREATED              STATUS              PORTS                    NAMES
+43ffe2d2e9e3   easydata_api     "python ./main.py"       About a minute ago   Up 53 seconds       0.0.0.0:5000->5000/tcp   easydata-api-1
+
+
+Pour créer un shell sur un de mes container actifs :
+
+- docker container exec -ti easydata-api-1 sh
+
+Maintenant je suis dans mon container api.
+Pour quitter :
+
+- exit 
+
+Cela n'arrêtera pas le container pour autant mais juste ma connexion établit plus haut.
