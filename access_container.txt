@@ -1,0 +1,13 @@
+Pour visualiser les containers qui sont en train de tourner sur ma machine :
+
+- docker container ls
+
+CONTAINER ID   IMAGE            COMMAND                  CREATED              STATUS              PORTS                    NAMES
+43ffe2d2e9e3   easydata_api     "python ./main.py"       About a minute ago   Up 53 seconds       0.0.0.0:5000->5000/tcp   easydata-api-1
+
+
+Pour pouvoir rentrer sur un container qui tourne sur ma machine :
+
+- docker container exec -ti easydata-api-1 sh
+
+Cela ouvre un shell connecté à mon container.
