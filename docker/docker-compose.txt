@@ -89,6 +89,10 @@ Pour lancer mon dockercompose :
 
 - docker-compose up
 
+En mode detach :
+
+- docker-compose up -d
+
 Pour démarrer un seul service :
 
 - docker-compose run front	** front étant le nom de mon service **
