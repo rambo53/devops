@@ -1,0 +1,12 @@
+////////////// SITE RELIABILITY ENGINEER ////////////// 
+
+Doit maintenir opérationnel notre application.
+Avec le cloud et la scalabilité notre application peut s'étendre sur des centaines voir des miliers de serveurs, ce qui devient compliquer à monitorer manuellement.
+
+Surveille 4 metriques :
+
+- latence, temps de requète
+- erreurs, si une erreur est levé
+- saturation, la charge
+- trafic, le nombre de demandes
+

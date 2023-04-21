@@ -1,0 +1,36 @@
+/////////////////////// LIVRAISON /////////////////////// 
+
+Les étapes de la livraisons sont : 
+
+- la codification de l'infrastructure
+- le déploiement
+- les tests par exemple de charge
+- le maintien en condition opérationnelle
+- la supervision
+
+Ensuite on a les feedbacks pour voir de possibles améliorations avec les équipes.
+
+/////////////////////////////////////////
+
+Pour l'infrastructure as code on utilise les container, et surtout docker compose qui nous permet d'avoir une traçabilité des environnements utilisés par notre application.
+
+Pour le déploiement on utilise en général 3 environnements, de dèv, de stagging/pré-prod et de production.
+
+Pour les tests on a :
+
+- test d'acceptance, on test si toute les fonctionnalités sont implémentés et fonctionne comme il faut.
+** confluence, fitnesse, ranorex
+
+- test de performance, vérifie que l'application ne se dégrade pas au fur et à mesure des déploiements.
+** jmeter, apache bench, gatling
+
+- smoke test, vérifie les fonctionnalités de base de notre appli, sans déclencher l'ensemble, ce pour être plus rapide et moins couteux et si il n'y a pas de pbm relevés alors déclenche de plus amples tests.
+** selenium, soapui, cypress
+
+- test de sécurité, ce sont des tests de vulnérabilité.
+** wapiti, snyk, zap (d'oswap)
+
+- test d'infrasctucture as code, pour scanner nos fichier docker compose par exemple
+** gitlab, checov, tflint
+
+Dans mon docker compose les "healthcheck" servent à vérifier l'état de mon container, en cas de problème détecté docker le redémarre.

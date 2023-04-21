@@ -1,0 +1,31 @@
+////////////// ETAPES INTEGRATION ////////////// 
+
+Elles sont au nombre de 5 :
+
+- planification de dèv' (SCRUM...)
+
+- compilation/intégration (gitlab)
+
+- tests (unitaire)
+
+- mesure qualité (sonarqube)
+
+- gestion des livrables, pour déploiement en test, prod... 
+
+
+////////////////////////////////////////////////////////////////////////
+
+Les contraintes de sécurité doivent être définit dès le départ, il est plus facile et moins couteux de le mettre en place au début du projet plutôt qu'à la fin.
+
+////////////////////////////////////////////////////////////////////////
+
+Toutes les étapes hormis celle de planification doivent être automatisé via un orchestrateur.
+Ici on utilise "gitlab CI".
+
+- A l'étape de "compilation" on envoit notre code qui, s'il ne compile pas, est refusé et ne passe pas aux étapes suivantes.
+
+- Pour l'étapes de test, ce sont les tests unitaires écrit par le dèv' qui seront exécutés.
+
+- L'étape de qualité sert à mesurer la maintenabilité, et l'évolutivité du code, elle vérifie la vulnérabilité ou même la duplication de code, la complexité de notre code.
+
+- Pour l'étape des livrables, ils sont stockés sur gitlab chez nous dans un repository. A partir de l'artéfact généré par cette étape on peut lancer d'autres tests, comme de performances.

@@ -1,0 +1,9 @@
+////////////////////// PACKAGING //////////////////////
+
+L'étape pour déployer notre application plus facilement.
+
+On ajoute l'étape de package dans notre fichier ".gitlab-ci.yml".
+
+Gitlab intègre sa propre registry d'image docker.
+
+Une fois cette étape passé on peut récupérer le package dans l'onglet "package registry" a gauche dans gitlab.

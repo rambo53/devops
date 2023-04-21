@@ -1,0 +1,10 @@
+//////////////////// COMPILATION TEST ////////////////////
+
+Pour éviter de gérer plusieurs versions en parallèle, on peut utiliser le "trunk based development", qui est une pratique consistant à n'avoir qu'une seule branche à maintenir, la main, et utiliser une branche éphémère que l'on merge avec la branche principale une fois la feature prête, et ces merge se font de façon quotidienne.
+
+- test unitaire
+- test intégration
+- test fonctionnels
+- test sécurité
+
+Intégration d'un bug pour vérifier que notre pipeline fonctionne bien.

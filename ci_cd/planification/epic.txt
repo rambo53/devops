@@ -1,0 +1,23 @@
+////////////////////////// EPIC //////////////////////////
+
+Une epic est une description de ce que le client veut, une tâche globale, on doit réaliser des wireframes à cette étape.
+
+Une fois que les informations pour cette epic sont toutes collectés, on peut lancer la phase de discussion avec les équipes pour définir les différentes sous tâches à développer pour la réaliser.
+
+On crée des user storie pour vérifier que la tâche correspond bien à ce qui était demandé au départ par le client.
+
+//////////////////////////
+
+Pour créer une epic, dans gitlab dans le menu à gauche, on click sur "issues" puis sur "new issue".
+
+Ici on va créer notre issue, avec un titre, une description, lui attribuer un label, une personne en charge, une date de rendu...
+
+Une fois créé je peux lui associé des schémas, wireframes...
+
+//////////////////////////
+
+Maintenant dans "issues" -> "list" j'ai mon epic qui apparait.
+
+//////////////////////////
+
+Pour créer un sprint, je vais sur "issues" -> "milestones"

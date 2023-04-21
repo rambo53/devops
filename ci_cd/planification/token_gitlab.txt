@@ -1,0 +1,15 @@
+///////////////////// TOKEN GITLAB /////////////////////
+
+Cliquer sur la photo de profil en haut à droite :
+
+- edit profile
+- sur la gauche "access tokens"
+
+Lui indiquer un nom, puis sélectionner "api" dans les checkboxes.
+Create personnal access token.
+
+Récupérer le PAT (personnal access token) dans l'input du haut du form.
+Il ne s'affiche qu'une seule fois attention de bien le récupérer.
+
+Une fois généré il suffit de le passer lors de la demande de mot de passe lors du clone du repo.
+

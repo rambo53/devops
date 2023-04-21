@@ -1,0 +1,20 @@
+///////////////// PREPARER GITLAB /////////////////
+
+Après avoir créé mon repo, je peux créer des labels pour préparer mon backlog, en haut à gauche :
+
+- project information -> labels
+
+Par exemple, "todo" avec la couleur rouge associée.
+
+/////////////////////////////////////////////////////
+
+Maintenant dans le board :
+
+- Issues -> boards
+
+En haut à droite "create list", sélectionner le label, puis "add to board".
+
+Je peux créer plusieurs labels pour mes user story, le niveau d'importance des tâches, le status (rejected, bug...).
+Par défaut j'ai un board nommé "development".
+
+Pour créer un nouveau board je clique sur le nom de mon board, ici "development",  puis "create new board".

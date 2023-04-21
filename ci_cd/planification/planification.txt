@@ -1,0 +1,9 @@
+/////////////////////////// PLANIFICATION ///////////////////////////
+
+A cette étape on réunit les équipe de dev et ops, pour faire le point sur les contraintes techniques propre à l'application, format des logs, metric, langue, déploiement...
+
+On réunit toutes ces informations dans un backlog, qui est une liste de fonctionnalités évolutives classé en fonction de leurs importance, difficulté...
+
+On crée des users story, tasks...
+
+Avec l'approche devops, même devsecops, on va créer un user "evil" qui devra mettre à l'épreuve la sécurité de notre projet.

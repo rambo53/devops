@@ -1,0 +1,8 @@
+///////////////////////// PIPELINE ///////////////////////
+
+Pour activer un pipeline d'intégration continue on se rend sur l'onglet "CI/CD" sur la gauche dans gitlab.
+
+Puis on choisit le framework ou le language que l'on utilise pour que gitlab génère de façon auto le fichier ".gitlab-ci.yml".
+
+Avec une version gratuite de gitlab il faut enregistrer un compte avec notre CB pour la validation.
+

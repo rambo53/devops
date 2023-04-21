@@ -1,0 +1,38 @@
+///////////////////////// SUPERVISION /////////////////////////
+
+Observation du comportement de mon application, et possibilité de rollback en cas de problème.
+
+- Prometheus pour récupérer et afficher les métriques de mon applications, par exemple le nombre d'erreurs 500, avec la fonction d'historique je peux vérifier si lors d'une mise à jour celles ci n'augmente pas.
+
+- ELK (stack elastic) qui regroupe elastic search, logstach, kibana, permet de centraliser les logs et de faire du forensic (retracer le parcours d'une attaque) 
+
+- zipkin, si architecture distribué (plusieurs services) savoir quelle service pose problème, service front, back, bdd...
+
+- slack, messagerie temps réel
+
+/////////////////////////////////
+
+Pour activer prometheus sous gitlab :
+
+- menu de gauche, settings
+- integrations
+- prometheus
+
+Checkbox "active", puis rentrer l'url du service prometheus, sauvegarder.
+Paramétrer les metriques.
+
+On peut aussi voir la performance de l'équipe via le nombre de commits, les issues, le temps d'exécution du code, la vélocité, la productivité...
+
+/////////////////////////////////
+
+Pour elasticsearch, on visualise les logs via l'interface de kibana.
+
+/////////////////////////////////
+
+Pour zipkin, on peut observer quel service pose des problèmes de performances, c'est surtout utilisé dans des architectures micro services.
+
+/////////////////////////////////
+
+Dans settings, integrations, on peut sélectionner slack pour être notifié en temps réel des notifications gitlab des changements apportés sur notre application, push, merge request...
+
+

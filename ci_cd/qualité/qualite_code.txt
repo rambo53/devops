@@ -1,0 +1,19 @@
+////////////////////////// QUALITE CODE //////////////////////////
+
+Mesurer la qualité du code :
+
+- complexité cyclomatique, en fonction des boucles, des conditions...
+- couverture de code, test cheminde parcours de code
+- code smells, mauvaise pratique pouvant occasionner des bugs
+- dette technique, temps de correction du bug probable
+- métrique des fonctions, nombre de fonctions, leurs longueurs...
+- tests de sécurité
+
+On peut utiliser sonarqube pour mesurer ces indications.
+
+Une fois l'étape d'analyse de qualité ajouté à notre ".gitlab-ci.yml", on peut le lancer.
+Le résultat de l'analyse de ce dernier se trouvera dans :
+
+- l'onglet CI/CD
+- jobs
+- sur la droite "browse"
