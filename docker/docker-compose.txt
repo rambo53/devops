@@ -102,3 +102,11 @@ Pour démarrer un seul service :
 Pour retirer les container générer par mon docker compose :
 
 - docker-compose down
+
+Attention supprimer les containers tournant sur ma machine ne supprime pas les images sur cette dernière, si j'ai besoin de regénérer mes images aussi :
+
+- docker image ls
+
+Liste les images sur ma machine puis :
+
+- docker rmi 756	** 756 sont les 3 premiers caractères de l'id de mon container **
