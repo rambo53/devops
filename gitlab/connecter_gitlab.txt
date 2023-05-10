@@ -1,0 +1,54 @@
+//////////////////////////// CONNECTER GITLAB //////////////////////////////////
+
+D'abord je dois générer une clé SSH sur mon Mac pour pouvoir me connecter à mon compte gitlab et faire des commit.
+Dans le terminal de ma machine :
+
+- ssh-keygen -t rsa
+
+Va me générer une clé SSH, me demande un fichier où enregistrer ma clé, taper sur entrée, propose d'enregistrer une passphrase, taper sur entrée, demande de confirmer passphrase, taper sur entrée.
+
+Je me rend dans le dossier SSH avec la commande :
+
+- cd ~/.ssh
+
+- cat id_rsa.pub
+
+
+//////////////////////////////////
+
+Je copie/colle ma clé ssh dans mon profil gitlab dans "SSH Keys".
+
+On crée un dossier git sur notre machine pour y insérer nos différents repo, ensuite je me place dessus et je clone notre repo git sur ma machine depuis gitlab en sélectionnant le repos à cloner, je click sur clone et je copie le contenu de "Clone wsh SSH", que je vais ensuite coller dans mon terminal : 
+
+- git clone git@scm.easycom.digital:BUDATAMANAGEMENT/akeneo-initialization.git
+
+Mon terminal me demande si je veux continuer, j'écris "yes".
+Je me place sur mon dossier :
+
+- cd /Users/infoesl3/Desktop/dossier_git/akeneo-initialization
+
+Si la connexion s'établit bien ma ligne de commande est précédé de "(base)".
+
+- git status
+
+M'indique sur quelle branche je suis, ici "dev".
+
+J'ajoute le fichier que j'ai modifié, ici le fichier python "convert_data_dictionary.py" :
+
+- git add datadictionary/convert_data_dictionary.py
+
+Ensuite je prépare mon commit avec mon commentaire :
+
+- git commit -m 'ajout traitement asset entity product' 
+
+Puis je termine par :
+
+- git pull
+
+- git push
+
+
+
+
+
+

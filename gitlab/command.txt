@@ -1,0 +1,38 @@
+//////////////////////////// COMMAND //////////////////////////////////
+
+Pour récupérer un repo par ssh dans l'onglet code de GitHub :
+
+- git clone git@github.com:rambo53/devops.git
+
+Pour récupérer un repo par ssh dans l'onglet clone de Gitlab :
+
+- git clone git@scm.com:rambo53/devops.git
+
+
+///////////////////////
+
+Pour récupérer les mises à jour sur le repo :
+
+- git pull
+
+
+///////////////////////
+
+Pour mettre à jour le repo avec des modifications ou création de fichiers :
+
+- git add mon_fichier.js
+
+- git commit -m 'create file'
+
+- git push
+
+
+///////////////////////
+
+Pour mettre à jour le repo avec des fichiers supprimés :
+
+- git add -u 
+
+- git commit -m 'delete file'
+
+- git push
